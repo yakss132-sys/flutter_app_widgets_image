@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Atelier 2'),
           centerTitle: true,
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: const Color.fromARGB(255, 193, 201, 215),
         ),
         body: Container(
           alignment: Alignment.topCenter,
@@ -27,11 +27,14 @@ class MainApp extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: Colors.blueAccent,
+                  color: const Color.fromARGB(255, 199, 255, 68),
                 ),
               ),
               SizedBox(height: 20),
-              Image.network('https://picsum.photos/200', width: 200),
+              Image.network(
+                'https://commons.wikimedia.org/wiki/Special:FilePath/Figure_in_Manga_style_variation_1.png?width=300',
+                width: 200,
+              ),
               SizedBox(height: 20),
               Text(
                 'Découvrez comment construire une interface simple et élégante.',
